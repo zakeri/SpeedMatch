@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">SpeedMatch</string>
+    <string name="app_name">Speed Match!</string>
+    <string name="game_title_which_one">Which One is Larger!</string>
+    <string name="game_title_speed_match">Speed Match!</string>
+    <string name="user_points">Your points: %d</string>
+    <string name="game_level">Level: %d out of %d</string>
+    <string name="game_finished">Game Finished!</string>
+    <string name="game_timer">Time remained: %d</string>
+    <string name="speed_match_question">Does this symbol match the previous symbol?</string>
+    <string name="speed_match_game_finished">Nice going! You earned %d points!</string>
+    <string name="speed_match_both_equal">Both</string>
+    <string name="speed_match_one_equal">One</string>
+    <string name="speed_match_none_equal">None</string>
+    <string name="enter_your_name">Enter your name:</string>
+    <string name="confirm">Confirm</string>
 </resources>

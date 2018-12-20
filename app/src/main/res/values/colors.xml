@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorGameBackground">#EEEEEE</color>
+    <color name="colorTextForeground">#EEEEEE</color>
+    <color name="colorScores">#BB2222</color>
+    <color name="colorSpeedMatchBackground">#AAAAAA</color>
+    <color name="colorSpeedMatchYellow">#f9e400</color>
+    <color name="colorSpeedMatchGreen">#289e19</color>
+    <color name="colorSpeedMatchBlue">#166caa</color>
+    <color name="colorSpeedMatchRed">#c60b0b</color>
 </resources>
