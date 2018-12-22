@@ -7,11 +7,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.rilixtech.materialfancybutton.MaterialFancyButton;
+
 
 public class MainActivity extends AppCompatActivity {
 
-    Button speedMatchGame;
-    Button whichOneGame;
+    MaterialFancyButton speedMatchGame;
+    MaterialFancyButton whichOneGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findViews() {
-        speedMatchGame = (Button) findViewById(R.id.game_speed_match);
-        whichOneGame = (Button) findViewById(R.id.game_which_one);
+        speedMatchGame = (MaterialFancyButton) findViewById(R.id.game_speed_match);
+        whichOneGame = (MaterialFancyButton) findViewById(R.id.game_which_one);
     }
 
     private void configure() {

@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:clickable="true"
     android:background="@drawable/background_red_wallpaper"
     android:layout_height="match_parent"
@@ -44,24 +45,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
                 android:id="@+id/which_one_left_button"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content" />
-            <Button
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                fancy:mfb_borderColor="@color/colorButtonsBorder"
+                fancy:mfb_borderWidth="2dp"
+                fancy:mfb_defaultColor="@color/colorButtons"
+                fancy:mfb_focusColor="@color/colorButtonsFocus"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_textColor="@color/colorButtonsText"
+                fancy:mfb_textSize="@dimen/text_size_button"
+                />
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
                 android:id="@+id/which_one_right_button"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                fancy:mfb_borderColor="@color/colorButtonsBorder"
+                fancy:mfb_borderWidth="2dp"
+                fancy:mfb_defaultColor="@color/colorButtons"
+                fancy:mfb_focusColor="@color/colorButtonsFocus"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_textColor="@color/colorButtonsText"
+                fancy:mfb_textSize="@dimen/text_size_button"
+                />
         </LinearLayout>
 
-        <Button
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
             android:id="@+id/which_one_equal_button"
             android:text="Equal"
             android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            fancy:mfb_borderColor="@color/colorButtonsBorder"
+            fancy:mfb_borderWidth="2dp"
+            fancy:mfb_defaultColor="@color/colorButtons"
+            fancy:mfb_focusColor="@color/colorButtonsFocus"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_textColor="@color/colorButtonsText"
+            fancy:mfb_textSize="@dimen/text_size_button"
+            />
 
     </LinearLayout>
 

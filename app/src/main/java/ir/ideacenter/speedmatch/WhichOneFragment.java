@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.rilixtech.materialfancybutton.MaterialFancyButton;
+
 import java.util.Random;
 
 public class WhichOneFragment extends Fragment {
@@ -29,9 +31,9 @@ public class WhichOneFragment extends Fragment {
 
     TextView userScoreBoard;
     TextView gameLevelBoard;
-    Button leftButton;
-    Button rightButton;
-    Button equalButton;
+    MaterialFancyButton leftButton;
+    MaterialFancyButton rightButton;
+    MaterialFancyButton equalButton;
     LinearLayout gameContainer;
     TextView gameCountDown;
 
@@ -233,9 +235,9 @@ public class WhichOneFragment extends Fragment {
     }
 
     private void findViews(View view) {
-        leftButton = (Button) view.findViewById(R.id.which_one_left_button);
-        rightButton = (Button) view.findViewById(R.id.which_one_right_button);
-        equalButton = (Button) view.findViewById(R.id.which_one_equal_button);
+        leftButton = (MaterialFancyButton) view.findViewById(R.id.which_one_left_button);
+        rightButton = (MaterialFancyButton) view.findViewById(R.id.which_one_right_button);
+        equalButton = (MaterialFancyButton) view.findViewById(R.id.which_one_equal_button);
         userScoreBoard = (TextView) view.findViewById(R.id.which_one_user_score);
         gameLevelBoard = (TextView) view.findViewById(R.id.which_one_game_level);
         gameContainer = (LinearLayout) view.findViewById(R.id.which_one_game_container);

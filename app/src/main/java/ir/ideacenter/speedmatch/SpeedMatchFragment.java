@@ -20,6 +20,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.rilixtech.materialfancybutton.MaterialFancyButton;
+
 import java.util.Random;
 
 public class SpeedMatchFragment extends Fragment {
@@ -43,9 +45,9 @@ public class SpeedMatchFragment extends Fragment {
 
     TextView userScoreBoard;
     TextView gameLevelBoard;
-    Button bothButton;
-    Button oneButton;
-    Button noneButton;
+    MaterialFancyButton bothButton;
+    MaterialFancyButton oneButton;
+    MaterialFancyButton noneButton;
     ConstraintLayout gameContainer;
     TextView gameCountDown;
     ImageView rightTick;
@@ -130,7 +132,6 @@ public class SpeedMatchFragment extends Fragment {
                 if (gameFinished || questionBeingChanged) return;
                 questionBeingChanged = true;
                 boolean isCorrect = evaluate(BOTH_BUTTON);
-                generateQuestion();
                 updateBoards(isCorrect, false);
             }
         });
@@ -141,7 +142,6 @@ public class SpeedMatchFragment extends Fragment {
                 if (gameFinished || questionBeingChanged) return;
                 questionBeingChanged = true;
                 boolean isCorrect = evaluate(ONE_BUTTON);
-                generateQuestion();
                 updateBoards(isCorrect, false);
             }
         });
@@ -152,7 +152,6 @@ public class SpeedMatchFragment extends Fragment {
                 if (gameFinished || questionBeingChanged) return;
                 questionBeingChanged = true;
                 boolean isCorrect = evaluate(NONE_BUTTON);
-                generateQuestion();
                 updateBoards(isCorrect, false);
             }
         });
@@ -185,6 +184,7 @@ public class SpeedMatchFragment extends Fragment {
         if (currentAnswer) userScore++;
         userScoreBoard.setText(getString(R.string.user_points, userScore));
         if (!initUpdate) showTick(currentAnswer);
+        generateQuestion();
         changeQuestionCard();
     }
 
@@ -373,9 +373,9 @@ public class SpeedMatchFragment extends Fragment {
     }
 
     private void findViews(View view) {
-        bothButton = (Button) view.findViewById(R.id.speed_match_button_both);
-        oneButton = (Button) view.findViewById(R.id.speed_match_button_one);
-        noneButton = (Button) view.findViewById(R.id.speed_match_button_none);
+        bothButton = (MaterialFancyButton) view.findViewById(R.id.speed_match_button_both);
+        oneButton = (MaterialFancyButton) view.findViewById(R.id.speed_match_button_one);
+        noneButton = (MaterialFancyButton) view.findViewById(R.id.speed_match_button_none);
         userScoreBoard = (TextView) view.findViewById(R.id.speed_match_user_score);
         gameLevelBoard = (TextView) view.findViewById(R.id.speed_match_game_level);
         gameContainer = (ConstraintLayout) view.findViewById(R.id.speed_match_game_container);

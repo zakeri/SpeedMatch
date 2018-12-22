@@ -3,13 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_red_wallpaper"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
         android:id="@+id/game_which_one"
         android:text="@string/game_title_which_one"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,9 +19,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="5:1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        fancy:mfb_borderColor="@color/colorButtonsBorder"
+        fancy:mfb_borderWidth="2dp"
+        fancy:mfb_defaultColor="@color/colorButtons"
+        fancy:mfb_focusColor="@color/colorButtonsFocus"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_textColor="@color/colorButtonsText"
+        fancy:mfb_textSize="@dimen/text_size_button"
+        />
 
-    <Button
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
         android:id="@+id/game_speed_match"
         android:text="@string/game_title_speed_match"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,6 +38,15 @@
         app:layout_constraintTop_toBottomOf="@+id/game_which_one"
         app:layout_constraintDimensionRatio="5:1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        fancy:mfb_borderColor="@color/colorButtonsBorder"
+        fancy:mfb_borderWidth="2dp"
+        fancy:mfb_defaultColor="@color/colorButtons"
+        fancy:mfb_focusColor="@color/colorButtonsFocus"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_textColor="@color/colorButtonsText"
+        fancy:mfb_textSize="@dimen/text_size_button"
+        />
 
 </android.support.constraint.ConstraintLayout>

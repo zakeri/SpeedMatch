@@ -8,9 +8,9 @@
     <string name="game_timer">Time remained: %d</string>
     <string name="speed_match_question">Does this symbol match the previous symbol?</string>
     <string name="speed_match_game_finished">Nice going! You earned %d points!</string>
-    <string name="speed_match_both_equal">Both</string>
-    <string name="speed_match_one_equal">One</string>
-    <string name="speed_match_none_equal">None</string>
+    <string name="speed_match_both_equal">BOTH</string>
+    <string name="speed_match_one_equal">ONE</string>
+    <string name="speed_match_none_equal">NONE</string>
     <string name="enter_your_name">Enter your name:</string>
     <string name="confirm">Confirm</string>
 </resources>
